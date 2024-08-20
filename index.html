@@ -10,42 +10,52 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
         header {
-            background-color: #333;
+            background-color: #444;
             color: white;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
         }
         nav {
-            background-color: #444;
-            overflow: hidden;
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
         }
         nav a {
-            float: left;
-            display: block;
             color: white;
-            text-align: center;
-            padding: 14px 16px;
+            padding: 14px 20px;
             text-decoration: none;
+            font-size: 18px;
         }
         nav a:hover {
             background-color: #ddd;
-            color: black;
+            color: #333;
         }
         .container {
             padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
-        .content {
-            background-color: white;
-            padding: 20px;
-            margin: 20px 0;
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #444;
+            border-bottom: 2px solid #444;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .section p, .section ul {
+            font-size: 16px;
+            line-height: 1.6;
         }
         footer {
-            text-align: center;
-            padding: 10px;
             background-color: #333;
             color: white;
+            text-align: center;
+            padding: 20px;
             position: fixed;
             width: 100%;
             bottom: 0;
@@ -57,16 +67,14 @@
         <h1>HumanGo - 一人公司转化器</h1>
     </header>
     <nav>
-        <a href="index.html">产品介绍</a>
-        <a href="contact.html">联系我们</a>
+        <a href="#product">产品介绍</a>
+        <a href="#contact">联系我们</a>
     </nav>
     <div class="container">
-        <div class="content">
+        <div id="product" class="section">
             <h2>产品介绍</h2>
             <p>
-                HumanGo 的核心产品“一人公司转化器”是一款AI辅助的多社群客户转化工具。
-                该工具支持微信、微博、Facebook等多个社交平台的统一管理，
-                并通过智能推荐和数据分析功能，帮助用户提高客户转化率。
+                HumanGo 的核心产品“一人公司转化器”是一款AI辅助的多社群客户转化工具。该工具支持微信、微博、Facebook等多个社交平台的统一管理，并通过智能推荐和数据分析功能，帮助用户提高客户转化率。
             </p>
             <h3>产品优势</h3>
             <ul>
@@ -74,6 +82,16 @@
                 <li>智能推荐：利用AI技术分析用户行为数据，智能推荐潜在客户，提高转化率。</li>
                 <li>自动化营销：提供自动化工具，减少人工操作，提高营销效率和效果。</li>
                 <li>数据分析和用户画像：通过实时监控和分析社群数据，提供详细的报告和洞察。</li>
+            </ul>
+        </div>
+        <div id="contact" class="section">
+            <h2>联系我们</h2>
+            <p>如果您对我们的产品有任何疑问或需要支持，请通过以下方式联系我们：</p>
+            <ul>
+                <li>邮箱: yaoqi100@126.com</li>
+                <li>电话: +86 13362689926</li>
+                <li>微信: yaoqi10012</li>
+                <li>地址: 深圳市南山区科技园</li>
             </ul>
         </div>
     </div>
